@@ -8,7 +8,7 @@ module.exports = {
   hardhat: {
   },
   polygon_mumbai: {
-  url: 'https://polygon-mumbai.g.alchemy.com/v2/-5sFdqeTElQTspi2tpgGr6qdE3RIKIuK',
+  url: 'ALCHEMY_URL',
   accounts: [`0x${''}`]
   }
   },
