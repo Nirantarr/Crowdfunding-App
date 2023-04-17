@@ -36,7 +36,7 @@ export const CrowdFundingProvider =({children})=>{
 
   const GetCampaigns = async()=>{
     try {
-        const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemy.com/v2/-5sFdqeTElQTspi2tpgGr6qdE3RIKIuK');
+        const provider = new ethers.providers.JsonRpcProvider('https://polygonmymbai alchemy url');
     const contract = fetchContract(provider);
     console.log("get contract function console line 45",contract);
     const campaigns= await contract.GetCampaign();
@@ -58,7 +58,7 @@ export const CrowdFundingProvider =({children})=>{
   };
 
   const GetUserCampaign = async()=>{
-  const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemy.com/v2/-5sFdqeTElQTspi2tpgGr6qdE3RIKIuK');
+  const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbaialchemy url');
   const contract = fetchContract(provider);
   const allCampaigns = await contract.GetCampaign();
   const accounts = await window.ethereum.request({ method:"eth_requestAccounts"
@@ -95,7 +95,7 @@ export const CrowdFundingProvider =({children})=>{
 };
 
 const GetDonation = async(pId)=>{
-    const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemy.com/v2/-5sFdqeTElQTspi2tpgGr6qdE3RIKIuK');
+    const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemyK');
     const contract = fetchContract(provider);
     const donations= await contract.GetDonatorInfo(pId);
     const numberofDonations = donations[0].length;
