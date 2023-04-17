@@ -1,0 +1,87 @@
+.Card{
+    border: 1px solid #eeeded;
+    width: 100%;
+    background-color: rgb(12, 35, 51);
+}
+.Card_container{
+    width: 90%;
+    margin:1.5rem auto;
+}
+.Card_container h3{
+    width: 20vw;
+    margin: 1rem auto;
+    padding: .5rem .3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.Card_container_item{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.Card_container_item1{
+    width: 23vw;
+    border: 1px solid white;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1rem;
+ 
+}
+.content{
+    padding: .2rem .4rem;
+    cursor: pointer;
+}
+.title{
+    width: 10vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.owner{
+    text-align: center;
+    margin: 1.5rem 0;
+    margin-bottom: .4rem;
+}
+.description{
+    margin: 0 auto;
+}
+.combine{
+    margin: 1.5rem 0;
+    margin-bottom: 0;
+    display: flex;
+    text-align: center;
+    color: rgb(199, 178, 178)
+}
+.target{
+    margin:0 auto;
+    padding: .2rem .2rem;
+}
+.daysLeft{
+    padding: 0 1rem;
+}
+@media (max-width: 768px) { /* Styles for screens with maximum width of 768px (typical mobile devices) */
+    .Card{
+        position: relative;
+        top: 31rem;
+    }
+    .Card_container h3{
+        width: 100%; /* Update to 100% for mobile devices */
+        text-align: center;
+    }
+    
+    .Card_container_item1{
+        width: 100%; /* Update to 100% for mobile devices */
+        margin-bottom: 1rem; /* Add margin bottom for spacing */
+    }
+    
+    .title{
+        width: 100%; /* Update to 100% for mobile devices */
+    }
+ 
+    .combine{
+        gap: 0.5rem; /* Add gap for spacing */
+    }
+}

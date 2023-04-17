@@ -1,0 +1,117 @@
+.Footer{
+    width: 100%;
+   background-color: rgb(12, 35, 51);
+}
+.Footer_container{
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+    
+}
+.Footer_container_left{
+padding: 2rem 2rem;
+margin: .7rem 2rem;
+/* background-color: blue; */
+}
+.Footer_container_left_heading{
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: .4rem;
+}
+.Footer_container_left_item{
+    font-size: 1rem;
+   cursor: pointer;
+}
+.Footer_container_left_item:hover{
+    border-bottom: 1px solid white;
+}
+.Footer_container_midleft{
+    padding: 2rem 2rem;
+margin: .7rem 2rem;
+}
+.Footer_container_midleft_heading{
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: .4rem;
+}
+.Footer_container_midleft_item{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.Footer_container_midleft_item:hover{
+    border-bottom: 1px solid white;
+}
+
+.Footer_container_right{
+    padding: 2rem 2rem;
+    margin: .7rem 2rem;
+}
+.Footer_container_right_heading{
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: .4rem;
+}
+.Footer_container_right_item{
+    font-size: 1rem; 
+    cursor: pointer;
+}
+.Footer_container_right_item:hover{
+    border-bottom: 1px solid white;
+    
+}
+
+@media screen and (max-width:45em){
+    .Footer{
+        width: 100%;
+        background-image: linear-gradient(rgb(32, 63, 85),rgb(48, 137, 153));
+        position: relative;
+        top: 30rem;
+        /* border: 1px solid black; */
+    }
+    
+    .Footer_container{
+        /* border: 1px solid black; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* grid-template-columns: repeat(2,1fr); */
+        color: #fff;
+        justify-content: space-evenly;
+        /* gap: 1rem; */
+        /* padding: 1rem; */
+        width: 99%;
+
+    }
+    .Footer_container_right{
+        display: none;
+    }
+    .Footer_container_left,
+    .Footer_container_midleft{  
+        width: 30vw;
+        text-align: center;
+        margin: 0 .4rem;
+        padding: .5rem .2rem;
+       
+    }
+    
+    .Footer_container_left_heading,
+    .Footer_container_midleft_heading,
+    .Footer_container_right_heading{
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding-bottom: .4rem;
+    }
+    
+    .Footer_container_left_item,
+    .Footer_container_midleft_item,
+    .Footer_container_right_item{
+        font-size: .8rem;
+        cursor: pointer;
+    }
+    
+    .Footer_container_left_item:hover,
+    .Footer_container_midleft_item:hover,
+    .Footer_container_right_item:hover{
+        border-bottom: 1px solid white;
+    }
+    
+}
